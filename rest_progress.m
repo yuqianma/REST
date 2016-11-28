@@ -22,7 +22,7 @@ if nargin>2
     if ischar(whichbar) || iscellstr(whichbar)
         type=2; %we are initializing
         msg=whichbar;
-    elseif isnumeric(whichbar)
+    elseif isnumeric(whichbar.Number)
         type=1; %we are updating, given a handle
         f=whichbar;
     else
